@@ -38,6 +38,9 @@ body {
 }
 
 .card-tall {
-  grid-column: span 2;
-  grid-row: span 2;
+  grid-row: span 2 / auto;
+}
+
+.card-wide {
+  grid-column: span 2 / auto;
 }
