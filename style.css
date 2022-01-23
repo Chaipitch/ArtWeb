@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
+
+* {
+  font-family: "Dongle", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: rgb(19, 19, 19);
   color: #fff;
@@ -32,15 +40,17 @@ body {
 .photo-grid {
   display: grid;
   gap: 1rem;
-  margin: 100px;
+  margin: 0 15px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: 300px;
 }
 
-.card-tall {
-  grid-row: span 2 / auto;
-}
+@media screen and (min-width: 600px) {
+  .card-tall {
+    grid-row: span 2 / auto;
+  }
 
-.card-wide {
-  grid-column: span 2 / auto;
+  .card-wide {
+    grid-column: span 2 / auto;
+  }
 }
