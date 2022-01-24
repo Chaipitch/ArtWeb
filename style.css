@@ -48,7 +48,7 @@ header p {
 .card:hover {
   box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
     rgba(2, 8, 20, 0.8) 0px 0.175em 0.5em;
-  transform: scale(1.01);
+  transform: translateY(-3px) scale(1.01);
 }
 
 .photo-grid {
